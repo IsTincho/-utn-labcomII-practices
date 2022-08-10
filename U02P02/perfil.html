@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfiles</title>
+    <link rel="stylesheet" href="styleP.css">
+</head>
+
+<body perfil>
+    <h1>Formulario para los Estudiantes de la TUP</h1>
+    
+    <form>
+        <fieldset>
+            <legend>ESTUDIANTE:</legend>
+            <!-- Datos personales -->
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+            <label for="mail">Mail de Contacto:</label>
+            <input type="text" id="mail" name="mail" placeholder="Ingrese su mail" size="40">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Ingrese su edad">
+          <br><br>  <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" list="nacionalidad" placeholder="Seleccionar"/>
+            <!-- Lista de nacionalidades -->
+        <datalist id="nacionalidad">
+            <option value="Argentino"></option>
+            <option value="Uruguayo"></option>
+            <option value="Chileno"></option>
+            <option value="Brasilero"></option>
+            <option value="Boliviano"></option>
+        </datalist>
+            <!-- Lista de condicion laboral -->
+            <label for="condicionL">Condicion Laboral:</label>
+            <input type="text" list="condicionL" placeholder="Seleccionar"><br><br>
+        <datalist id="condicionL">
+            <option value="Desempleado"></option>
+            <option value="En búsqueda laboral"></option>
+            <option value="Trabajo part time"></option>
+            <option value="Trabajo full time"></option>
+        </datalist>
+            <!-- Gustos personales -->
+            <label for="musica">Gusto musical preferido:</label>
+            <input type="text" id="musica" name="musica" placeholder="Ingresar gusto preferido"/>
+            <label for="comidas">Comida favorita:</label>
+            <input type="text" list="comidas" placeholder="Seleccionar"/>
+        <datalist id="comidas">
+            <option value="Pizza"></option>
+            <option value="Milanesas"></option>
+            <option value="Hamburguesa"></option>
+            <option value="Asado"></option>
+        </datalist>
+            <!-- Enviar + Recordar botones -->
+            <br>
+            <br>
+            <input type="submit" value="Enviar"><br>
+            <label for="checkbox">Recordar datos:</label>
+            <input type="checkbox" name="check" id="check"/>
+        </fieldset>
+    </form> 
+
+</body>
+
+</html>

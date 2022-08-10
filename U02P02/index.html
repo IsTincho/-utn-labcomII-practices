@@ -1,25 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi segunda Página - Segnini</title>
-
-    <style>
-        table,
-        td,
-        th{
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 5px;
-        }
-        table{
-            width: 100%;
-        }
-    </style>
-
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>    
@@ -30,9 +16,9 @@
     <table>
         <tr>
             <td>Nombre</td>
-            <td>Spiderman</td>
-            <td>Iron Man</td>
-            <td>Kang</td>
+            <td id="Spiderman">Spiderman</td>
+            <td id="IronMan">Iron Man</td>
+            <td id="Kang">Kang</td>
         </tr>
         <tr>
             <td>Héroe/Villano</td>
@@ -47,6 +33,45 @@
             <td>Vivo en el multiverso</td>
         </tr>
     </table>
+    <hr>
+    <pr>
+        <h2>Tabla compleja</h2>
+        <h3>Top 3 Albumnes de Ghost</h3>
+    </pr>
+    <table>
+        <caption></caption>
+        <tr>
+            <th>Nombre del Album</th>
+            <th colspan="2">Cancion/Link</th>
+            <th>Nro de Emeritus</th>
+            <th>Fecha</th>
+        </tr>
+        <tr>
+            <td class="Albumnes" rowspan="2">IMPERA</td>
+            <td rowspan="2" style="color: blue;">Bite of Passage/Respite on the Spitafields</td>
+            <td><a href="https://www.youtube.com/watch?v=C2pLkzpevao" target="_blank">Youtube</a></td>
+            <td rowspan="2">Papa Emeritus IV</td>
+            <td rowspan="2">2022</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.youtube.com/watch?v=JA21qOo2mWs" target="_blank">Youtube</a></td>
+        </tr>
+        <tr>
+            <td class="Albumnes">MELIORA</td>
+            <td>Cirice</td>
+            <td><a href="https://www.youtube.com/watch?v=HUBQaxqo_lE" target="_blank">Youtube</a></td>
+            <td>Papa Emeritus III</td>
+            <td>2015</td>
+        </tr>
+        <tr>
+            <td class="Albumnes">PREQUELLE</td>
+            <td>Rats</td>
+            <td><a href="https://www.youtube.com/watch?v=C_ijc7A5oAc" target="_blank">Youtube</a></td>
+            <td>Cardinal Copia</td>
+            <td>2018</td>
+        </tr>
+    </table>
+
     <hr>
 </body>
 

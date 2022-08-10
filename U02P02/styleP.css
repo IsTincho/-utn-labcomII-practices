@@ -1,0 +1,27 @@
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: 100%;
+    width : 155px;
+    padding: 0;
+    margin: 0;
+    box-sizing: auto;
+}
+
+fieldset {
+    position: absolute;
+    border-color: rgb(29, 29, 116);
+    color: rgb(41, 39, 39);
+}
+  
+legend {
+    font-family: inherit;
+    font-size: 100%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+h1 {
+    font : 1em "typewriter", monospace;
+    align-self : end;
+  }
