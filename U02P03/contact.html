@@ -24,15 +24,34 @@
         <!-- Contenedor principal -->
         <main>
             <section>
-                <h2>Sobre nosotros</h2>
-                <p>Somos 4 pirtas legendarios los encargados de esta comunidad.
-                    Puedes entrar a nuestro <a href="https://discord.gg/seaofthieves">Discord Oficial</a>
-                    para enterarte de todas las novedades en esta nueva Temporada.</p>
-                <h2>Comprar el Juego</h2>
-                <p>
-                    Sea of Thieves se encuentra disponible en la tienda <a href="https://www.xbox.com/es-AR/games/store/sea-of-thieves/9p2n57mc619k">oficial de Microsoft</a> o desde
-                    la tienda de <a href="https://store.steampowered.com/app/1172620/Sea_of_Thieves/">Steam</a>. Clickea alguna de las dos para ser redirigido.
-                </p>
+                <h2>Acerca de ti:</h2>
+                <form>
+                    <table>
+                        <ol>
+                            <li>
+                                <label>Nombre:</label>
+                                <input required>
+                            </li>
+                            <li>
+                                <label>Email:</label>
+                                <input type="email" required>
+                            </li>
+                            <li>
+                                <label>Edad:</label>
+                                <input type="number">
+                            </li>
+                            <li>
+                                <label>Color preferido:</label>
+                                <input type="color">
+                            </li>
+                            <li>
+                                <label>Comentarios:</label>
+                                <input type="text" minlength="10">
+                            </li>
+                        </ol>
+                        <input type="button" value="Enviar">
+                    </table>
+                </form>
             </section>
         </main>
             <!-- Contenedor secundario / derecho -->
