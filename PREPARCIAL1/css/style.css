@@ -1,6 +1,21 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700");
-header{
-    background-color: rgb(240, 240, 240);
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400, 700;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,32 +23,85 @@ header{
 header nav{
     flex-grow: 1;
 }
-.profile{
-    width: 100px;
+header nav ul li{
+    display: inline-flex;
+    margin-right: 12px;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #181818;
-    padding: 1;
+header nav ul li a{
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400, 700;
+    color: rgb(107, 107, 107);
+    padding: 25px;
+    text-transform: uppercase;
 }
-body{
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
+header nav ul li a:hover{
+    border-bottom: 2px solid rgb(185, 184, 184);
 }
-a{
-    text-decoration: none;
+header nav ul li a:active{
+    border-bottom: 2px solid rgb(71, 71, 71);
+}
+header .profile a{
+    color: rgb(71, 71, 71);
+    padding: 15px 35px;
+    display: block;
+}
+header .profile svg{
+    width: 30px;
 }
 header .logo{
-    padding: 10px;
-    height: 40px;
+    padding: 12px;
+    height: 42px;
+}
+main section{
+    display: flex;
+    min-width: 300px;
+}
+section.fullwidth{
+    justify-content: center;
+    align-items: center;
+}
+section.main-image>div{
+    flex: auto;
+}
+.img-content p{
+    font-size: 18px;
+    padding: 45px;
 }
 .img-background{
     width: 800px;
     height: 500px;
     float: left;
-    background-image: url("../css/utn-alumnos.jpg");
+    background-image:url("../img/utn-alumnos.jpg");
+}
+.img-background h1{
+    color: white;
+}
+.main-image{
+    display: flex;
+    min-height: auto;
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carreras-container{
+    width: 100%;
+    padding: 30px 0px;
+}
+.carreras{
+    display: flex;
+    justify-content: space-between;
+}
+.carreras .carrera:hover{
+    background-color: rgb(80, 80, 80);
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    background-color: white;
+}
+footer>div{
+    padding: 20px;
 }
