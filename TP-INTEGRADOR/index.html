@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUP LC2 - TP Integrador</title>
+    <title>🌦️Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
 </head>
@@ -12,12 +12,12 @@
 <body>
     <header>
         <h1>
-            <span>Clima App</span>
+            <span>🌦️ Clima App</span>
         </h1>
         <nav>
             <ul>
-                <li class="current-page"><a href="/index.html">Mi App</a></li>
-                <li><a href="/add-city.html">Ciudad</a></li>
+                <li class="current-page"><a href="/index.html">Clima</a></li>
+                <li><a href="/add-city.html">Agregar Ciudad</a></li>
                 <li><a href="/help.html">Ayuda</a></li>
             </ul>
         </nav>
@@ -28,9 +28,26 @@
         <section id="form-city-list">
             <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
+                <form>
+                    <select name="city" id="Ciudades">
+                        <option value="" disabled selected>Seleccionar Ciudad</option>
+                        <option value="ROSARIO">Rosario</option>
+                        <option value="RAFAELA">Rafaela</option>
+                    </select>
+                    <input type="submit" value="Consultar"/>
+                </form>
         </section>
         <section id="section-weather-result">
             <!-- Sección donde se debe mostrar el clima de la ciudad -->
+            <div class="card">
+                <h3>Rosario</h3>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png">
+                <p>Temperatura: 25.31º</p>
+                <p>Sensación Térmica: 24.65º</p>
+                <p>Humedad: 29%</p>
+                <p>Velocidad del viento: 4.63km/h</p>
+                <p>Presión: 1011 P</p>
+            </div>
         </section>
     </main>
     <footer>

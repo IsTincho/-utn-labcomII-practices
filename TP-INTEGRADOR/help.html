@@ -4,33 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TUP LC2 - TP Integrador</title>
+    <title>🌦️Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
 </head>
 
 <body>
     <header>
         <h1>
-            <span>Clima App</span>
+            <span>🌦️ Clima App</span>
         </h1>
         <nav>
             <ul>
+                <li><a href="/index.html">Clima</a></li>
+                <li><a href="/add-city.html">Agregar Ciudad</a></li>
                 <li class="current-page"><a href="/help.html">Ayuda</a></li>
-                <li><a href="/add-city.html">Ciudad</a></li>
-                <li><a href="/index.html">Mi app</a></li>
             </ul>
         </nav>
     </header>
     <!-- Contenido principal de la página -->
     <main>
         <h2>Ayuda Clima App V.1.0</h2>
-        <section id="form-city-list">
-            <!-- Sección donde se debe colocar el formulario, con el select y el
-botón de consultar -->
+        <section id="">
+            <p>
+                Esta App te permite consultar el clima de una ciudad en particular utilizando la<br>
+                API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>.
+                <br>
+                <br>Para poder consultar el clima, primero deberá <a href=add-city.html>Agregar una ciudad</a> y luego<br>
+                seleccionar la Ciudad en cuestión desde la página <a href="/index.html">Clima</a>.</p>
+
         </section>
-        <section id="section-weather-result">
-            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+        <section id="formAyuda">
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Ingrese su nombre completo"><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" placeholder="Ingrese su email completo"><br>
+                    <label for="Mensaje">Mensaje:</label>
+                    <input type="text" class="textBox">
+                    <br><input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                </form>
         </section>
     </main>
     <footer>
