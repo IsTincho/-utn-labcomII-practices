@@ -1,0 +1,64 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+h1{
+    size: 24px; 
+    color: #242424; 
+    font-weight: 900;
+}
+
+h2{
+    size: 20px; 
+    color:#606060; 
+    font-weight: 800;
+}
+
+p{
+    size: 14px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+}
+
+ul{
+    margin-left: 100px; 
+    padding: 20px; 
+    border: solid 2px blue;
+    max-width: 40%;
+    list-style: none;
+}
+
+li{
+    font-family: monospace; 
+    size: 18px;
+    margin: 10px;
+}
+
+a{
+    font-weight: bold;
+}
+
+li a{
+    color: orange; 
+    text-decoration: underline;
+}
+
+li:hover{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+/*Neuquen */
+ul li:nth-child(2){ 
+    color: green;
+}
+li:nth-child(2) a:visited{ 
+    color: green;
+}
+/*Rio Negro */
+ul li:nth-child(6){
+    color: green;
+}
+li:nth-child(6) a:visited{ 
+    color: green;
+}
