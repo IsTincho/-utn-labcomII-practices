@@ -2,3 +2,74 @@
     width: 250px;
     height: 200px;
 }
+
+#formAyuda form{
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 300px;
+}
+
+#formAyuda input[type=text]{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#formAyuda input[type=email]{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttons input[type=submit]{
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 6px;
+    border-style: hidden;
+    background-color: #00594C;
+    color: white;
+}
+
+.buttons input[type=reset]{
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 6px;
+    border-style: hidden;
+    background-color: #00594C;
+    color: white;
+}
+
+.error{
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #dc3445;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 35px;
+}
+
+.error h2{
+    font-size: medium;
+    color: white;
+    text-align: center;
+}

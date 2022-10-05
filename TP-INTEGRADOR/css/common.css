@@ -34,7 +34,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-color:aqua;
 }
 
 nav>ul {
@@ -55,6 +58,8 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-active);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 nav li.current-page a {
@@ -101,7 +106,7 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -115,6 +120,19 @@ footer p {
 
 main p {
     margin-bottom: 16px;
+}
+
+.titulo {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo img{
+    margin-right: 15px;
 }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */

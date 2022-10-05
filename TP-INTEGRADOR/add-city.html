@@ -4,16 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌦️Clima App</title>
+    <title>Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages/add-city.css">
+    <link rel="icon" href="img/mi-icon.png">
 </head>
 
 <body>
     <header>
-        <h1>
-            <span>🌦️ Clima App</span>
-        </h1>
+        <nav class="titulo">
+            <img src="img/mi-icon.png" width="45px" height="36px">
+            <h1>
+                <span>Clima App</span>
+            </h1>
+        </nav>
         <nav>
             <ul>
                 <li><a href="/index.html">Clima</a></li>
@@ -25,18 +30,26 @@
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Ciudad</h2>
-        <section id="">
-            <!-- Sección donde se debe colocar el formulario, con el select y el
-botón de consultar -->
-                <form>
-                    <label for="AddCity">Ingrese la ciudad a agregar:</label>
-                    <input type="text" placeholder="Agregar su Ciudad">
-                    <br><input type="submit" value="Agregar">
-                </form>
-        </section>
-        <section id="section-weather-result">
-            <!-- Sección donde se debe mostrar el clima de la ciudad -->
-        </section>
+        <form class="menu">
+            
+            <p>
+                <label for="Agregar ciudad">Ingrese la ciudad a agregar: </label>
+                <input type="text" id="nombre"><br>
+                <input type="submit" value="Agregar" class="input"> 
+                </p>
+        </form>
+
+                <nav class="verde">
+                    <h2>Ciudad agregada con éxito</h2>
+                </nav>
+                
+                <nav class="rojo">
+                    <h2>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</h2>
+                </nav>
+                
+                <nav class="amarillo">
+                    <h2>La ciudad ingresada ya se encuentra almacenada</h2>
+                </nav>
     </main>
     <footer>
         <p>
