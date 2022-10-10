@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima App</title>
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/pages/help.css">
-    <link rel="icon" href="img/mi-icon.png">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/pages/help.css">
+    <link rel="icon" href="/img/mi-icon.png">
 </head>
 
 <body>
     <header>
         <nav class="titulo">
-            <img src="img/mi-icon.png" width="45px" height="36px">
+            <img src="/img/mi-icon.png" width="45px" height="36px">
             <h1>
                 <span>Clima App</span>
             </h1>
@@ -38,18 +38,18 @@
                 Esta App te permite consultar el clima de una ciudad en particular utilizando la<br>
                 API de <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a>.
                 <br>
-                <br>Para poder consultar el clima, primero deberá <a href=add-city.html>Agregar una ciudad</a> y luego<br>
+                <br>Para poder consultar el clima, primero deberá <a href=/add-city.html>Agregar una ciudad</a> y luego<br>
                 seleccionar la Ciudad en cuestión desde la página <a href="/index.html">Clima</a>.</p>
         </section>
         
         <section id="formAyuda">
                 <form>
                     <label for="Nombre">Nombre:</label>
-                    <input type="text" placeholder="Ingrese su nombre completo"><br>
+                    <input type="text" id="Nombre" placeholder="Ingrese su nombre completo"><br>
                     <label for="Email">Email:</label>
-                    <input type="email" placeholder="Ingrese su email completo"><br>
+                    <input type="email" id="Email" placeholder="Ingrese su email completo"><br>
                     <label for="Mensaje">Mensaje:</label>
-                    <textarea name="mensaje" class="textBox"></textarea>
+                    <textarea name="mensaje" id="Mensaje" class="textBox"></textarea>
                 <div class="buttons">
                     <input type="reset" value="Limpiar">
                     <input type="submit" value="Enviar">
@@ -69,8 +69,10 @@
         </p>
     </footer>
 
-    <script src="js/common.js"></script>
-    <script src="js/pages/help.js"></script>
+    <!-- Agrego los JS al Final para que cargue bien la estructura y el css -->
+
+    <script src="/js/common.js"></script>
+    <script src="/js/pages/help.js"></script>
 
 </body>
 

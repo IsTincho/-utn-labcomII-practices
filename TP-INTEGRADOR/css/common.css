@@ -38,6 +38,7 @@ header {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-color:aqua;
+    border-bottom-style: solid;
 }
 
 nav>ul {
@@ -111,6 +112,9 @@ footer {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-color:aqua;
+    border-bottom-style: solid;
+    border-top-style: solid;
 }
 
 footer p {
