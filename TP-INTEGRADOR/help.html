@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/help.css">
     <link rel="icon" href="img/mi-icon.png">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/help.js" defer></script>
 </head>
 
 <body>
@@ -51,13 +53,13 @@
                     <label for="Mensaje">Mensaje:</label>
                     <textarea name="mensaje" id="Mensaje" class="textBox"></textarea>
                 <div class="buttons">
-                    <input type="reset" value="Limpiar">
-                    <input type="submit" value="Enviar">
+                    <button type="reset" value="Limpiar" id="reset">Limpiar</button>
+                    <button type="submit" value="Enviar" id="submit" onclick="validarEmail()">Enviar</button>
                 </div>
                 </form>
         </section>
     
-        <div class="error">
+        <div class="error" id="errorHelp">
             <h2>Ingrese un Email válido</h2>
         </div>
     
@@ -71,8 +73,7 @@
 
     <!-- Agrego los JS al Final para que cargue bien la estructura y el css -->
 
-    <script src="js/common.js"></script>
-    <script src="js/pages/help.js"></script>
+
 
 </body>
 

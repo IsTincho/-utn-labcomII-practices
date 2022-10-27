@@ -14,7 +14,7 @@ main h2{
     display: grid;
     grid-template-columns: 300px;
 }
-.menu #nombre{
+.menu #agregarCiudad{
     width: 215px;
     height: 35px;
     border-radius: 9px;
@@ -50,6 +50,7 @@ main h2{
 }
 
 .verde{
+
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -78,6 +79,7 @@ main h2{
 }
 
 .amarillo{
+
     text-align: center;
     align-items: center;
     justify-content: center;

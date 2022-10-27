@@ -21,7 +21,7 @@
     border-color: #00594C;
 }
 
-#formAyuda input[type=email]{
+#formAyuda #Email{
     width: 300px;
     height: 35px;
     border-radius: 5px;
@@ -36,7 +36,7 @@
     
 }
 
-.buttons input[type=submit]{
+.buttons #submit{
     margin-top: 15px;
     margin-right: 10px;
     padding: 10px 15px;
@@ -47,7 +47,7 @@
     color: white;
 }
 
-.buttons input[type=reset]{
+.buttons #reset{
     margin-top: 15px;
     margin-right: 10px;
     padding: 10px 15px;
@@ -59,6 +59,7 @@
 }
 
 .error{
+    display: none;
     margin-top: 50px;
     text-align: center;
     align-items: center;
@@ -73,6 +74,27 @@
 }
 
 .error h2{
+    font-size: 70%;
+    color: white;
+    text-align: center;
+}
+
+.correcto{
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #4adc34;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 325px;
+    margin-left: 325px;
+    margin-bottom: 35px;
+}
+
+.correcto h2{
     font-size: 70%;
     color: white;
     text-align: center;

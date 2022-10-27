@@ -1,4 +1,4 @@
-input[type="submit"] {
+input[type="button"] {
     font-size: 10px;
     font-weight: bold;
     width: 80px;
@@ -18,7 +18,7 @@ select{
     text-align: start;
 }
 
-.card{
+#card{
     margin-top: 40px;
     margin-bottom: 20px;
     align-items: center;
@@ -28,8 +28,9 @@ select{
     2px 5px 10px rgba(0, 0, 0, 0.356);
     width: 265px;
     height: 325px;
+    display: none;
 }
 
-.card h3{
+#card h3{
     font-size: 20px;
 }

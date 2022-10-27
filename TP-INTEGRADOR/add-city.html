@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
     <link rel="icon" href="img/mi-icon.png">
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/add-city.js" defer></script>
 </head>
 
 <body>
@@ -29,27 +31,28 @@
     </header>
     <!-- Contenido principal de la página -->
     <main>
-        <h2>Agregar Ciudad</h2>
+        <body onload="ocultarAlerts()">
+            <h2>Agregar Ciudad</h2>
         <form class="menu">
-            
             <p>
                 <label for="Agregar ciudad">Ingrese la ciudad a agregar: </label>
-                <input type="text" id="nombre"><br>
-                <input type="submit" value="Agregar" class="input"> 
-                </p>
+                <input type="text" id="agregarCiudad"><br>
+                <button onclick="addCity()" type="button" class="input">Agregar</button> 
+            </p>
         </form>
 
-                <nav class="verde">
+                <nav class="verde" id="verde">
                     <h2>Ciudad agregada con éxito</h2>
                 </nav>
                 
-                <nav class="rojo">
+                <nav class="rojo" id="rojo">
                     <h2>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</h2>
                 </nav>
                 
-                <nav class="amarillo">
+                <nav class="amarillo" id="amarillo">
                     <h2>La ciudad ingresada ya se encuentra almacenada</h2>
                 </nav>
+        </body>
     </main>
     <footer>
         <p>
@@ -60,8 +63,6 @@
     <!-- Agrego los JS al Final para que cargue bien la estructura y el css -->
 
 
-    <script src="js/common.js"></script>
-    <script src="js/pages/add-city.js"></script>
 
 </body>
 
