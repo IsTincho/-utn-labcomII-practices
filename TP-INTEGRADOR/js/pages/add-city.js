@@ -17,26 +17,29 @@ function addCity(){
     let newCity = document.getElementById('agregarCiudad').value;
     let cities = getCitiesFromLocalStorage();
     if (cities.indexOf(newCity)>=0){
-        document.getElementById('verde').style.display = "none";
-        document.getElementById("amarillo").style.display = "block";
+        ocultarAlerts();
+        mostrarAlertAmarillo();
     } else {
         cities.push(newCity);
-        document.getElementById('verde').style.display = "block";
-        document.getElementById("amarillo").style.display = "none";
+        ocultarAlerts();
+        mostrarAlertVerde();
     }
     localStorage.setItem("CITIES",JSON.stringify(cities));
 }
 
 const llamarDatos= async () => {
     try {
-        let miciudad = document.getElementById("Ciudades").value;
+        let miciudad = document.getElementById("agregarCiudad").value;
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${miciudad}&appid=${apiKey}&units=metric&lang=es`;
         const res = await fetch(url);
         if (res.ok) {
             const datos = await res.json();
+            addCity();
             console.log(datos);
         } else {
-            console.log(res.status); // 404            
+            console.log(res.status); // 404
+            ocultarAlerts();   
+            mostrarAlertRoja();    
         }
     } catch (err) {
         console.log(err);
